@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Qurt ul ain Sultan">
+		<title>Eatify | Menu Page</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+		
+		<div class="container">
+			<div id="branding">
+				<h1>eatïfy</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="./home_page.html">Home</a></li>
+					<li><a href="./restaurant_list.html">Restaurant List</a></li>
+					<li class="current"><a href="./menu_page.html">Menu</a></li>
+					<li><a href="./order_page.html">Order</a></li>
+					<li><a href="./confirmation_page.html">Confirmation</a></li>
+					<input type="text" name="search" placeholder="Search..">
+					
+				</ul>
+			</nav>
+		</header>
+		
+		<section id="showcase">
+			<div class="container">
+				<h1>Menu</h1>
+				<p>Lorem ipsum dolor sit amet, pro quod stet sanctus ex, tale solum sea id, in vix sint putent. Verear virtute mandamus in qui, eu vel nominati eleifend, at mea modus augue. Pro an elit civibus, has ad facer prompta incorrupte, sit quodsi omnesque posidonium te. Iusto delectus salutandi qui an, vis eruditi tacimates elaboraret ad. Vim salutatus constituto ex, ea commune molestie philosophia qui, mea id alia oblique inimicus. Euismod gubergren signiferumque pri id, sit id fugit ubique. Sea eius semper latine et, in eirmod percipit vim.</p>
+			</div>
+		</section>
+		
+		
+		<!-- Photos taken from Pinterest Food page
+		
+		Reference: https://www.pinterest.ca/search/pins/?q=food&rs=typed&term_meta[]=food%7Ctyped
+		-->
+		
+		<div class="row">
+			<div class="menu" style="background-color:#f4f4f4;">
+				<img src="./img/sandwich.jpg">
+				<h2 class="item-title" value="Baked Honey Hot Chicken Sandwich">Baked Honey Hot Chicken Sandwich</h2>
+				<p class = "item-price" value="5.99">5.99</p>
+				<button onclick="addToCart()">Add to shopping cart</button>
+				
+			</div>
+			
+			<div class="menu" style="background-color:#f4f4f4;">
+				<img src="./img/taco.jpg">
+				<h2 class="item-title">Chicken and Avocado Tacos with Creamy Cilantro Sauce</h2>
+				<p class = "item-price">6.99</p>
+				<button onclick="addToCart()">Add to shopping cart</button>
+				
+			</div>
+			
+			<div class="menu" style="background-color:#f4f4f4;">
+				<img src="./img/thai.jpg">
+				<h2 class="item-title">Spicy Thai Red Curry Noodle Soup</h2>
+				<p class = "item-price">10.99</p>
+				<button onclick="addToCart()">Add to shopping cart</button>
+				
+			</div>
+			
+			<div class="menu" style="background-color:#f4f4f4;">
+				<img src="./img/wings.jpg">
+				<h2 class="item-title">Crispy Baked Buffalo Wings</h2>
+				<p class = "item-price">7.99</p>
+				<button onclick="addToCart()">Add to shopping cart</button>
+				
+				
+			</div>
+		
+		</div>
+
+		<div id="cart">
+
+			
+			<button onclick="returnToResto()" class="return" style="vertical-align:middle"><span>Return</span></button>
+			<button onclick = "goToOrder()" class= "orderPage"><span>View order</span></button>
+
+
+		</div>
+		
+		
+		<footer>
+			<p>Eatify, Copyright &copy; 2019</p>
+		</footer>
+
+		<script>
+	
+
+			function addToCart(){
+				
+				window.alert("This item was added to you cart");
+				
+			}
+
+			function goToOrder() {
+				
+				location.replace("./order_page.html");
+
+			}
+
+			function returnToResto() {
+				location.replace("./restaurant_list.html");
+			}
+
+
+
+		</script>
+
+
+		
+	</body>
+	
+</html>
+
