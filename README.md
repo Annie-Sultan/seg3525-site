@@ -1,4 +1,3 @@
-# seg_site
-Lab component for SEG3525 course :)
+# seg3525-site
 
 Un site web statique pour la commande de nourriture en ligne.
